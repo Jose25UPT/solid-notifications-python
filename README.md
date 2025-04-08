@@ -58,3 +58,31 @@ It establishes that:
 > *"Simplicity is the ultimate sophistication."*
 
 The following principles are based on these two principles.
+
+SOLID is an acronym that brings together five key principles for efficient, replicable, maintainable, and scalable software development.
+
+	S - Single Responsibility Principle (SRP)  
+“Every class should have a single responsibility: It should have a single purpose in the system, and there should be only one reason to change it.”
+
+Each class should have a single responsibility, a single task that should be applied to classes, components, and microservices. 
+
+	O - Open/Closed Principle (OCP)  
+“…code should be open for extension but closed to modification. When we have a good design, we just don’t have to change code much to add new features.”  
+A software entity (class) should be open to extension (its functionality can be expanded with external entities) but closed to modification.  
+If one of the extensions doesn't work, you can remove it without damaging the original code.
+
+
+	L - Liskov Substitution Principle (LSP)  
+“Objects of subclasses should be substitutable for objects of their superclasses throughout our code.”  
+The Liskov Substitution Principle speaks of interfaces: if a software entity uses a class, it should be able to use classes derived from that class.
+ 
+	I - Interface Segregation Principle (ISP)  
+“A client-specific interface for a particular set of clients.”  
+Instead of one large, common interface, multiple scenario-specific interfaces should be planned to improve decoupling and change management:  
+Clients (software entities) that use a software entity (originally a class) should not be forced to depend on methods they don't use. To address this, large interfaces should be segregated, i.e., broken up, into smaller ones.
+ 
+
+	D - Dependency Inversion Principle (DIP)  
+
+“It is better to depend on interfaces or abstract classes than it is to depend on concrete classes.”  
+The Dependency Inversion Principle states that high-level modules, that is, those closest to human ideas of what the software should do, should not depend on low-level modules (those closest to the implementation details for the computer). Both should depend on the abstractions of the problem (interfaces). Furthermore, the implementation details should depend on the abstractions as well.
