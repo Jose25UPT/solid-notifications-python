@@ -20,7 +20,7 @@ Este proyecto implementa un ejemplo práctico de los 5 principios SOLID utilizan
 ## 🚀 Cómo ejecutar
 ```bash
 python solid_example.py
-
+```
 # What is a Principle?
 
 A principle is a broad behavioral guideline applicable to many situations. In general, a principle doesn't tell you exactly what to do, but rather gives you clues as to the correct course of action across a wide range of situations. The details are up to you.
