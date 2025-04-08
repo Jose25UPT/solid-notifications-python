@@ -1,0 +1,24 @@
+
+name: Run SOLID Notification Example
+
+# 🔄 Disparador: cuando haces push a la rama main
+on:
+  push:
+    branches: [ main ]
+
+# 📦 Definición del job (tarea)
+jobs:
+  run-script:
+    runs-on: ubuntu-latest  # Usa una máquina virtual con Ubuntu
+
+    steps:
+    - name: Clonar repositorio
+      uses: actions/checkout@v3
+
+    - name: Configurar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Ejecutar script Python
+      run: python solid_example.py
