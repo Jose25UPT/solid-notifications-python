@@ -1,4 +1,4 @@
-cat << 'EOF' > solid_example.py
+
 from abc import ABC, abstractmethod
 
 # Principio SRP: Una clase, una responsabilidad.
